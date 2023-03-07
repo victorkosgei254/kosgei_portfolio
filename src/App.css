@@ -55,5 +55,8 @@ body main
 body .footer
 {
     height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
