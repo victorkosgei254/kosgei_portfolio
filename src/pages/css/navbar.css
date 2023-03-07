@@ -1,0 +1,45 @@
+.navbar
+{
+    display: flex;
+    position: sticky;
+    top:0;
+    height: 10%;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+.navbar logo h1
+{
+    font-family: "Roboto-Bold";
+    width: 50%;
+}
+.navbar nav
+{
+    width: 50%;
+}
+.navbar .logo h1 a 
+{
+    color: #454545;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar nav ul 
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar nav ul li a 
+{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #454545;
+}
+
+.navbar nav ul li a:hover
+{
+    color: #4000ff;
+    font-weight: bold;
+}
