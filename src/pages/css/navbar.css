@@ -43,3 +43,9 @@
     color: #4000ff;
     font-weight: bold;
 }
+
+.navbar nav ul  .selected   
+{
+    font-weight: bold;
+    color: #4000ff;
+}

@@ -31,8 +31,8 @@ function App() {
     /*UPDATE TO REACT ROUTER DOM 6.4
      * return( 
         <>
-            <Navbar/>
             <BrowserRouter>
+                <Navbar/>
                 <Routes>
                     <Route path='/' element = {<AboutMe />}/>
                     <Route path='/projects' element = {<Projects />}/>
