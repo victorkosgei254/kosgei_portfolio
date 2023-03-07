@@ -33,10 +33,10 @@
     font-family: "Roboto-Regular";
     scroll-behavior: smooth;
 }
-
 .container
 {
     overflow: hidden;
+    animation: pageloadAnimation ease 1.8s;
     display:flex;
     flex-direction: column;
     height: 100vh;
@@ -60,3 +60,12 @@ body .footer
     align-items: center;
 }
 
+@keyframes pageloadAnimation
+{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
