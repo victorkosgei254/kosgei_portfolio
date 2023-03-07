@@ -1,0 +1,46 @@
+.projects
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.projects .header
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 2rem;
+}
+.project-items
+{
+    padding: 2rem;
+    align-items: center;
+    display: flex;
+}
+
+.projects .project-view
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px #ccc;
+    width: 60%;
+}
+
+.project-view .description
+{
+    display: flow-root;
+    line-height: 1.5;
+}
+.project-view .description img
+{
+    float: left;
+    max-height: 300px;
+    max-width: 300px;
+    margin-right: 1rem;
+    border-radius: 10px;
+}
