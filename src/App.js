@@ -1,8 +1,7 @@
 import './App.css';
-import {BrowserRouter, createBrowserRouter,
+import {createBrowserRouter,
     createRoutesFromElements, Route,
-    RouterProvider,
-    Routes} from 'react-router-dom';
+    RouterProvider} from 'react-router-dom';
 
 //Pages 
 import AboutMe from "./pages/AboutMe"
