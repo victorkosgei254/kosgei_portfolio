@@ -12,16 +12,16 @@ import Navbar from "./pages/components/Navbar"
 function App() {
     return( 
         <>
-        <Navbar/>
-        <BrowserRouter>
-            <Routes>
-                <Route path='/' element = {<AboutMe />}/>
-                <Route path='/projects' element = {<Projects />}/>
-                <Route path="/hireme" element = {<HireMe/>} />
-                <Route path="/resume" element = {<Resume />}/>
-                <Route path="*" element={<PageNotFound/>}/>
-            </Routes>
-        </BrowserRouter>
+            <BrowserRouter>
+                <Navbar/>
+                <Routes>
+                    <Route path='/' element = {<AboutMe />}/>
+                    <Route path='/projects' element = {<Projects />}/>
+                    <Route path="/hireme" element = {<HireMe/>} />
+                    <Route path="/resume" element = {<Resume />}/>
+                    <Route path="*" element={<PageNotFound/>}/>
+                </Routes>
+            </BrowserRouter>
         </>
     )
 }
