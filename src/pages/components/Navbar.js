@@ -1,9 +1,10 @@
+import "../css/navbar.css"
 function Navbar({props})
 {
     return(
         <div className="navbar">
             <div className="logo">
-                <h1>Kosgei Victor</h1>
+                <h1><a href="/">Kosgei Victor</a></h1>
             </div>
             <nav>
                 <ul>
