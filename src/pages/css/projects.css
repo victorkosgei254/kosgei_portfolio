@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 2rem;
+    padding: 2rem;
 }
 .projects__contents
 {
@@ -34,14 +34,17 @@
     width: 100%;
     height: 300px;
 }
+
 .project-view__description:nth-child(even)
 {
-    text-align: right;
+    text-align: justify;
+    line-height: 1.5;
     padding-right: 2rem;
 }
 .project-view__description:nth-child(odd)
 {
-    text-align: left;
+    text-align: justify;
+    line-height: 1.5;
     padding-left: 2rem;
 }
 
@@ -49,6 +52,32 @@
 {
     width: 100%;
     margin: 0 auto;
+    position: relative;
+}
+.project-view__image img 
+{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    filter: blur(3px);
+}
+.project-view__image h1
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #fff;
+}
+.project-view__image img:hover
+{
+    filter: none;
+}
+.project-view__image h1:hover 
+{
+    display: none;
 }
 .project-view__image:nth-child(odd)
 {
