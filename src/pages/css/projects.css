@@ -2,45 +2,83 @@
 {
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .projects .header
 {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     padding-left: 2rem;
+}
+.projects__contents
+{
+    display: flex;
+    height: 100%;
 }
 .project-items
 {
     padding: 2rem;
     align-items: center;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    height: 100%;
+    width: 80%;
+    overflow: auto;
 }
 
-.projects .project-view
+.project-view__description
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 10px 10px 20px #ccc;
-    width: 60%;
+    width: 100%;
+    height: 300px;
+}
+.project-view__description:nth-child(even)
+{
+    text-align: right;
+    padding-right: 2rem;
+}
+.project-view__description:nth-child(odd)
+{
+    text-align: left;
+    padding-left: 2rem;
 }
 
-.project-view .description
+.project-view__image
 {
-    display: flow-root;
-    line-height: 1.5;
+    width: 100%;
+    margin: 0 auto;
 }
-.project-view .description img
+.project-view__image:nth-child(odd)
 {
-    float: left;
-    max-height: 300px;
-    max-width: 300px;
-    margin-right: 1rem;
-    border-radius: 10px;
+    text-align: right;
+    padding-right: 2rem;
 }
+.project-view__image:nth-child(even)
+{
+    text-align: left;
+    padding-left: 2rem;
+}
+
+.project-view__line
+{
+    background-color: #ccc;
+    position: relative;
+    height: 100%;
+}
+.project-view__dot
+{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: #fff;
+    border: 3px solid #ccc;
+}
+
+
+
