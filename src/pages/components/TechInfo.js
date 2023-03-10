@@ -29,15 +29,42 @@ function TechInfo({props})
             }
         ]
     }
+
+    const options = {
+        indexAxis: 'y',
+        barPercentage: 0.25,
+        cartegoryPercentage: 0.25,
+        maintainAspectRatio:false,
+        borderRadius: "50",
+        scales:{
+            x:{
+                grid:{
+                    display:false
+                },
+                ticks:{
+                    display:false
+                }
+            },
+            y:{
+                grid:{
+                    display:false
+                }
+            },
+        }
+    }
     return(
         <div className="tech-info">
+            <div className="tech-info_header">
             <h3>Techstack</h3>
-            <b>Programming Languages</b>
-            <div>
-                <Bar data={data} options={{indexAxis: 'y'}}/>
             </div>
+            <b>Programming Languages</b>
+            <div className="tech-info_languages">
+                <Bar data={data} options={options}/>
+            </div>
+            <div className="tech-info_project_dist">
             <b>Project distribution</b>
-            <Bar data={data_techs} options={{indexAxis:'y'}}/>
+            <Bar data={data_techs} options={options}/>
+            </div>
         </div>
     )
 }

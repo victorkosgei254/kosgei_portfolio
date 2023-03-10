@@ -113,5 +113,24 @@
 .tech-info
 {
     width: 20%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    max-height: 80%;
+}
+.tech-info_header
+{
+    position: sticky;
+    top: 0;
     height: 100%;
+    background-color: #fff;
+    padding: 1rem;
+}
+.tech-info_languages
+{
+    height: 50%;
+}
+.tech-info_project_dist
+{
+    height: 50%;
 }
